@@ -1,6 +1,7 @@
 .button {
     font-size: 1.2rem;
     padding: 0.9em 1.7em;
+    border-radius: 0.3em;
     text-transform: uppercase;
 
     &--accent {
@@ -11,5 +12,10 @@
         &:hover {
             background-color: darken($accent, 8);
         }
+    }
+
+    &--white {
+        background-color: $white;
+        color: $accent;
     }
 }

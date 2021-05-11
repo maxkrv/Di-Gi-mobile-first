@@ -1,0 +1,46 @@
+.promo {
+    padding: 2.66rem 0;
+    background-color: $accent;
+
+    &__inner {
+        display: flex;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        color: $white;
+
+        @media (max-width: 768px) {
+            margin-bottom: 2.66rem;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0.66rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    &__description {
+        @media (max-width: 1024px) {
+            max-width: 430px;
+        }
+        @media (max-width: 768px) {
+            max-width: none;
+        }
+    }
+
+    &__call {
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 768px) {
+            justify-content: flex-end;
+            width: 50%;
+        }
+    }
+}
