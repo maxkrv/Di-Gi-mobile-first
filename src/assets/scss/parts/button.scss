@@ -1,0 +1,15 @@
+.button {
+    font-size: 1.2rem;
+    padding: 0.9em 1.7em;
+    text-transform: uppercase;
+
+    &--accent {
+        background-color: $accent;
+        color: $white;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: darken($accent, 8);
+        }
+    }
+}

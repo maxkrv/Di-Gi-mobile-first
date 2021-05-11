@@ -1,0 +1,16 @@
+.header {
+    background-color: $accent;
+    position: fixed;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+}
+

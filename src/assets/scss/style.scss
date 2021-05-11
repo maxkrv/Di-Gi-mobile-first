@@ -1,0 +1,43 @@
+@import "mixins";
+@import "reset";
+@import "fonts";
+@import "vars";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: Roboto;
+}
+
+.container {
+    padding: 0 20px;
+
+    @media (min-width: 640px) {
+        padding: 0 30px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 0 40px;
+    }
+
+    @media (min-width: 1440px) {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+}
+
+//parts
+@import "parts/nav";
+@import "parts/slider";
+@import "parts/button";
+
+
+//blocks
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/footer";
