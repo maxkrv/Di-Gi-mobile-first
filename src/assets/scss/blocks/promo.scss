@@ -37,10 +37,15 @@
     &__call {
         display: flex;
         justify-content: center;
+        align-items: center;
 
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
             justify-content: flex-end;
             width: 50%;
+        }
+        @media (min-width: 1024px) {
+            justify-content: flex-end;
+            width: 100%;
         }
     }
 }
