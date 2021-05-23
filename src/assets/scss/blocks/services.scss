@@ -1,0 +1,88 @@
+.service {
+    &__inner {
+        @media (min-width: 640px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card {
+        color: $dark;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__card-inner {
+        padding: 50px 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:hover .service__card-more {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &::after {
+            content: " ";
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            left: 0;
+            display: block;
+            height: 100%;
+            width: 100%;
+            border: 4px solid $accent;
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        @media (min-width: 640px) {
+            width: 50%;
+        }
+        @media (min-width: 1024px) {
+            width: 25%;
+        }
+    }
+
+    &__card-img {
+        margin-bottom: 25px;
+    }
+
+    &__card-title {
+        margin-bottom: 17px;
+        text-transform: uppercase;
+    }
+
+    &__card-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &__card-description {
+        text-align: center;
+        color: $grey;
+        margin-bottom: 17px;
+    }
+
+    &__card-button {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $accent;
+    }
+}

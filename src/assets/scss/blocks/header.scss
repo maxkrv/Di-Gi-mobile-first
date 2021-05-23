@@ -1,6 +1,7 @@
 .header {
     background-color: $accent;
     position: fixed;
+    z-index: 999;
     width: 100%;
 
     top: 0;
