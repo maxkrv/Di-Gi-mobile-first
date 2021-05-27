@@ -1,7 +1,10 @@
 .section {
     padding: 40px 0;
     &__header {
-        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-bottom: 40px;
     }
 
@@ -50,6 +53,8 @@
 
     &__description {
         color: $grey;
+        text-align: center;
+        display: inline-block;
 
         @media (min-width: 640px) {
             font-size: 1.2rem;

@@ -42,12 +42,12 @@
 
     &__item-overlay {
         background-color: rgba(249, 246, 230, 0.8);
+        border-radius: 4px;
         transition: 0.3s;
         opacity: 0;
         visibility: hidden;
         top: 50%;
         left: 50%;
-        border-radius: 4px;
         transform: translate(-50%, -50%);
         position: absolute;
         height: 92%;
