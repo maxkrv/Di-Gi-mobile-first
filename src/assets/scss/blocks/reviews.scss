@@ -1,0 +1,31 @@
+.reviews {
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    &__img {
+        margin-bottom: 60px;
+    }
+
+    &__slider {
+        text-align: center;
+    }
+
+    &__slider-text {
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+        
+        span {
+            color: $accent;
+            font-weight: 700;
+        }
+    }
+
+    &__slider-title {
+    }
+}

@@ -50,9 +50,9 @@
         display: flex;
         flex-direction: column;
         padding: 40px 0;
-        opacity: none;
+        opacity: 0;
         visibility: hidden;
-        transition: 0.3s;
+        transition: opacity 0.3s;
 
         &--active {
             opacity: 1;
@@ -61,11 +61,27 @@
     }
 
     &__item {
+        position: relative;
         display: inline-block;
         margin: 20px auto;
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $white;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+        }
     }
 
     &__link {
         color: $white;
+        text-transform: uppercase;
+        font-size: 1.4rem;
     }
 }

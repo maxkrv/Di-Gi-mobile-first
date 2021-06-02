@@ -32,6 +32,10 @@ body {
     }
 }
 
+//vendor
+@import "../../../node_modules/swiper/swiper-vars";
+@import "../../../node_modules/swiper/swiper";
+
 //parts
 @import "parts/nav";
 @import "parts/slider";
@@ -47,4 +51,5 @@ body {
 @import "blocks/work";
 @import "blocks/team";
 @import "blocks/news";
+@import "blocks/reviews";
 @import "blocks/footer";
